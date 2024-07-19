@@ -15,8 +15,6 @@ class Solution {
                     sum += nums[k];
                     sum += nums[l];
                     if(sum == target){
-                        System.out.println(sum);
-                        System.out.println(target - nums[l] - nums[k]);
                         ans.add(Arrays.asList(nums[i],nums[j],nums[k],nums[l]));
 
                         while(k+1 < l && nums[k] == nums[k+1]) k++;
